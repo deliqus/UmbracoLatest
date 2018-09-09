@@ -1,0 +1,13 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+	Layout = "Master.cshtml";
+}
+
+@* the fun starts here *@
+
+<h2>ahoj</h2>
+<h3>@Umbraco.Field("nameOfSection")</h3>
+<p>@Umbraco.Field("descriptionOfSection")@Umbraco.Field("nameOfSection", convertLineBreaks: true)</p>
+
+<h4>Obsah local zmena 2</h4>
+<p>@Umbraco.Field("richContent")</p>
